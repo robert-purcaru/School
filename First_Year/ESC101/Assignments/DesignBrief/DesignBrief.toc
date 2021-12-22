@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Background and Purpose}{2}%
+\contentsline {section}{\numberline {2}Stakeholders and Their Objectives}{3}%
+\contentsline {subsection}{\numberline {2.1}Students}{3}%
+\contentsline {subsection}{\numberline {2.2}Professors and TAs}{3}%
+\contentsline {subsection}{\numberline {2.3}The Facilitators of the Solution}{3}%
+\contentsline {section}{\numberline {3}Objectives}{3}%
+\contentsline {subsection}{\numberline {3.1}Providing an Estimate}{3}%
+\contentsline {subsection}{\numberline {3.2}Information Acquisition and Privacy}{3}%
+\contentsline {subsection}{\numberline {3.3}Accessibility and Ease of Use}{4}%
+\contentsline {section}{\numberline {4}Metrics}{4}%
+\contentsline {subsection}{\numberline {4.1}Measuring Value and Consistency of Estimate}{4}%
+\contentsline {subsection}{\numberline {4.2}Measuring Effective Information Acquisition and Upholding of Privacy}{4}%
+\contentsline {subsection}{\numberline {4.3}Measuring the Accessibility and User-Friendliness}{4}%
+\contentsline {section}{\numberline {5}Criteria}{4}%
+\contentsline {section}{\numberline {6}Constraints}{6}%
+\contentsline {section}{\numberline {7}Evaluations of Reference Designs}{6}%
+\contentsline {section}{\numberline {8}Source Extracts}{7}%

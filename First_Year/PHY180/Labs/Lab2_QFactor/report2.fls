@@ -1,0 +1,184 @@
+PWD c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor
+INPUT C:\Users\crobe\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.tex
+OUTPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.log
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\navigator\navigator.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\navigator\navigator.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\navigator\navigator.tex
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\yax\yax.tex
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\texapi\texapi.tex
+OUTPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.pdf
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\latex-fonts\lasy6.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cancel\cancel.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdftex.def
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.aux
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.aux
+OUTPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.aux
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.toc
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.toc
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+OUTPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.toc
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\crobe\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT images\setup.jpg
+INPUT .\images\setup.jpg
+INPUT .\images\setup.jpg
+INPUT .\images\setup.jpg
+INPUT .\images\setup.jpg
+INPUT images\allMasses.PNG
+INPUT .\images\allMasses.PNG
+INPUT .\images\allMasses.PNG
+INPUT .\images\allMasses.PNG
+INPUT .\images\allMasses.PNG
+INPUT images\clampView.jpg
+INPUT .\images\clampView.jpg
+INPUT .\images\clampView.jpg
+INPUT .\images\clampView.jpg
+INPUT .\images\clampView.jpg
+INPUT images\zeroed.jpg
+INPUT .\images\zeroed.jpg
+INPUT .\images\zeroed.jpg
+INPUT .\images\zeroed.jpg
+INPUT .\images\zeroed.jpg
+INPUT images\combo.PNG
+INPUT .\images\combo.PNG
+INPUT .\images\combo.PNG
+INPUT .\images\combo.PNG
+INPUT .\images\combo.PNG
+INPUT images\rawData.png
+INPUT .\images\rawData.png
+INPUT .\images\rawData.png
+INPUT .\images\rawData.png
+INPUT .\images\rawData.png
+INPUT images\correctedGraph.PNG
+INPUT .\images\correctedGraph.PNG
+INPUT .\images\correctedGraph.PNG
+INPUT .\images\correctedGraph.PNG
+INPUT .\images\correctedGraph.PNG
+INPUT images\tauGraph.PNG
+INPUT .\images\tauGraph.PNG
+INPUT .\images\tauGraph.PNG
+INPUT .\images\tauGraph.PNG
+INPUT .\images\tauGraph.PNG
+INPUT images\QuadGraph.PNG
+INPUT .\images\QuadGraph.PNG
+INPUT .\images\QuadGraph.PNG
+INPUT .\images\QuadGraph.PNG
+INPUT .\images\QuadGraph.PNG
+INPUT images\CubeGraph.PNG
+INPUT .\images\CubeGraph.PNG
+INPUT .\images\CubeGraph.PNG
+INPUT .\images\CubeGraph.PNG
+INPUT .\images\CubeGraph.PNG
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.bbl
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.bbl
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT c:\Users\crobe\Desktop\PHY180\Labs\Lab2_QFactor\report2.aux
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\crobe\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb

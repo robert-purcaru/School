@@ -1,0 +1,123 @@
+|part3
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Function[0] => Mux0.IN9
+Function[0] => Mux1.IN9
+Function[0] => Mux2.IN9
+Function[0] => Mux3.IN9
+Function[0] => Mux4.IN9
+Function[0] => Mux5.IN10
+Function[0] => Mux6.IN10
+Function[0] => Mux7.IN10
+Function[0] => Mux8.IN10
+Function[1] => Mux0.IN8
+Function[1] => Mux1.IN8
+Function[1] => Mux2.IN8
+Function[1] => Mux3.IN8
+Function[1] => Mux4.IN8
+Function[1] => Mux5.IN9
+Function[1] => Mux6.IN9
+Function[1] => Mux7.IN9
+Function[1] => Mux8.IN9
+Function[2] => Mux0.IN7
+Function[2] => Mux1.IN7
+Function[2] => Mux2.IN7
+Function[2] => Mux3.IN7
+Function[2] => Mux4.IN7
+Function[2] => Mux5.IN8
+Function[2] => Mux6.IN8
+Function[2] => Mux7.IN8
+Function[2] => Mux8.IN8
+ALUout[0] <= ALUout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[1] <= ALUout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[2] <= ALUout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[3] <= ALUout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[4] <= ALUout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[5] <= ALUout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[6] <= ALUout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUout[7] <= ALUout[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|part2_a:u0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+c_in => c_in.IN1
+s[0] <= FullAdder:u0.s
+s[1] <= FullAdder:u1.s
+s[2] <= FullAdder:u2.s
+s[3] <= FullAdder:u3.s
+c_out <= FullAdder:u3.c_out
+
+
+|part3|part2_a:u0|FullAdder:u0
+a => w0.IN0
+b => b.IN1
+c_in => c_in.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= Mux:u0.f
+
+
+|part3|part2_a:u0|FullAdder:u0|Mux:u0
+x => f.DATAA
+y => f.DATAB
+s => Decoder0.IN0
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|part2_a:u0|FullAdder:u1
+a => w0.IN0
+b => b.IN1
+c_in => c_in.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= Mux:u0.f
+
+
+|part3|part2_a:u0|FullAdder:u1|Mux:u0
+x => f.DATAA
+y => f.DATAB
+s => Decoder0.IN0
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|part2_a:u0|FullAdder:u2
+a => w0.IN0
+b => b.IN1
+c_in => c_in.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= Mux:u0.f
+
+
+|part3|part2_a:u0|FullAdder:u2|Mux:u0
+x => f.DATAA
+y => f.DATAB
+s => Decoder0.IN0
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|part2_a:u0|FullAdder:u3
+a => w0.IN0
+b => b.IN1
+c_in => c_in.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= Mux:u0.f
+
+
+|part3|part2_a:u0|FullAdder:u3|Mux:u0
+x => f.DATAA
+y => f.DATAB
+s => Decoder0.IN0
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

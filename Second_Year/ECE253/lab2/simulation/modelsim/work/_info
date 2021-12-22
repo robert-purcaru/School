@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/crobe/Desktop/School/ECE253/lab2/simulation/modelsim
+vmain
+Z1 !s110 1632954883
+!i10b 1
+!s100 TV7zaFCA=a3jXk>=T;Jzd2
+I=4l`0zdVndWfdmSH<`PRS3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1632954690
+Z4 8main.vo
+Z5 Fmain.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1632954883.000000
+Z8 !s107 main.vo|
+Z9 !s90 main.vo|
+!i113 1
+Z10 tCvgOpt 0
+vmux2to1
+R1
+!i10b 1
+!s100 T?8QRVSCmiNnMHdLS]EAz0
+IA48z7dcdKFlM<A3eV[E:X2
+R2
+R0
+R3
+R4
+R5
+L0 1370
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmux_1
+R1
+!i10b 1
+!s100 ^3=FohKEGm3SVfCe@0Pcl3
+IfTHM:?o5@@S1b?[C;aoh70
+R2
+R0
+R3
+R4
+R5
+L0 1333
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vtb
+R1
+!i10b 1
+!s100 OKhdkNK:n^8;ao8^7;^Ko0
+ISLkcO2AC6@45cGc:YcZDK1
+R2
+R0
+w1632953940
+8tb.v
+Ftb.v
+L0 6
+R6
+r1
+!s85 0
+31
+R7
+!s107 tb.v|
+!s90 tb.v|
+!i113 1
+R10

@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DesignBrief.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Database file #1: References.bib
+Warning--empty author in CSA
+Warning--empty author in ISO
+You've used 5 entries,
+            1876 wiz_defined-function locations,
+            510 strings with 4336 characters,
+and the built_in function-call counts, 1091 in all, are:
+= -- 112
+> -- 28
+< -- 0
++ -- 12
+- -- 7
+* -- 81
+:= -- 159
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 59
+empty$ -- 110
+format.name$ -- 7
+if$ -- 266
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 3
+pop$ -- 13
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 36
+stack$ -- 0
+substring$ -- 57
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 10
+width$ -- 6
+write$ -- 51
+(There were 2 warnings)

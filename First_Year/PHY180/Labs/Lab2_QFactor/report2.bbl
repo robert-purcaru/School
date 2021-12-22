@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{opencv_library}
+G.~Bradski, ``{The OpenCV Library},'' {\em Dr. Dobb's Journal of Software
+  Tools}, 2000.
+
+\bibitem{labManual}
+B.~Wilson, {\em PHY180 Lab Project (2020)}.
+
+\bibitem{2020SciPy-NMeth}
+P.~Virtanen, R.~Gommers, T.~E. Oliphant, M.~Haberland, T.~Reddy, D.~Cournapeau,
+  E.~Burovski, P.~Peterson, W.~Weckesser, J.~Bright, S.~J. {van der Walt},
+  M.~Brett, J.~Wilson, K.~J. Millman, N.~Mayorov, A.~R.~J. Nelson, E.~Jones,
+  R.~Kern, E.~Larson, C.~J. Carey, {\.I}.~Polat, Y.~Feng, E.~W. Moore,
+  J.~{VanderPlas}, D.~Laxalde, J.~Perktold, R.~Cimrman, I.~Henriksen, E.~A.
+  Quintero, C.~R. Harris, A.~M. Archibald, A.~H. Ribeiro, F.~Pedregosa, P.~{van
+  Mulbregt}, and {SciPy 1.0 Contributors}, ``{{SciPy} 1.0: Fundamental
+  Algorithms for Scientific Computing in Python},'' {\em Nature Methods},
+  vol.~17, pp.~261--272, 2020.
+
+\bibitem{nasa_2015}
+``The drag equation,'' May 2015.
+
+\end{thebibliography}

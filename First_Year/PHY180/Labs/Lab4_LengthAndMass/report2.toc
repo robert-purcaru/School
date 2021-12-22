@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Author's Note}{1}%
+\contentsline {subsection}{\numberline {1.1}General}{1}%
+\contentsline {section}{\numberline {2}Experimental Design}{2}%
+\contentsline {section}{\numberline {3}Data}{5}%
+\contentsline {section}{\numberline {4}Sources of Error}{12}%
+\contentsline {subsection}{\numberline {4.1}Measurement Errors}{12}%
+\contentsline {subsection}{\numberline {4.2}Analysis Errors}{13}%
+\contentsline {section}{\numberline {5}Q Factor}{14}%
+\contentsline {subsection}{\numberline {5.1}Counting Cycles}{14}%
+\contentsline {subsection}{\numberline {5.2}Determining $\tau $}{14}%
+\contentsline {section}{\numberline {6}Relationship Between Period and Amplitude}{15}%
+\contentsline {section}{\numberline {7}\leavevmode {\color {red}Determining Relationship Between String length and Period, and Mass and Period}}{16}%
+\contentsline {subsection}{\numberline {7.1}\leavevmode {\color {red}Relationship Between String Length and Period}}{16}%
+\contentsline {subsection}{\numberline {7.2}\leavevmode {\color {red}Relationship Between Mass and Period}}{16}%
+\contentsline {section}{\numberline {8}Appendix}{17}%
+\contentsline {subsection}{\numberline {8.1}Equations and Calculations}{17}%
+\contentsline {subsection}{\numberline {8.2}Programs Used}{18}%
+\contentsline {subsection}{\numberline {8.3}\leavevmode {\color {red}Raw Data}}{19}%

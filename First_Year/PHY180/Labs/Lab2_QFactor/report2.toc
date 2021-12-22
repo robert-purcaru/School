@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}\leavevmode {\color {red}Auhtor's Note}}{1}%
+\contentsline {subsection}{\numberline {1.1}\leavevmode {\color {red}General}}{1}%
+\contentsline {subsection}{\numberline {1.2}\leavevmode {\color {red}Note to Nathan}}{2}%
+\contentsline {section}{\numberline {2}Experimental Design}{2}%
+\contentsline {section}{\numberline {3}Data}{6}%
+\contentsline {section}{\numberline {4}Sources of Error}{10}%
+\contentsline {subsection}{\numberline {4.1}Measurement Errors}{10}%
+\contentsline {subsection}{\numberline {4.2}Analysis Errors}{10}%
+\contentsline {section}{\numberline {5}Q Factor}{11}%
+\contentsline {subsection}{\numberline {5.1}Counting Cycles}{11}%
+\contentsline {subsection}{\numberline {5.2}Determining $\tau $}{11}%
+\contentsline {section}{\numberline {6}\leavevmode {\color {red}Relationship Between Period and Amplitude}}{12}%
+\contentsline {section}{\numberline {7}Appendix}{13}%
+\contentsline {subsection}{\numberline {7.1}Calculations}{13}%
+\contentsline {subsection}{\numberline {7.2}Programs Used}{13}%

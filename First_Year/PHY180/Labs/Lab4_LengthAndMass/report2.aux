@@ -1,0 +1,92 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Author's Note}{1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}General}{1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Experimental Design}{2}\protected@file@percent }
+\newlabel{sec:design}{{2}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Experimental setup used, excluding tripod and recording device. Left half of setup is obscured by wall.\relax }}{2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:setup}{{1}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces All combinations of bolts used to vary mass available with plates that were used for this experiment. The mass with four carriage bolts (second from the right) was used in this experiment.\relax }}{3}\protected@file@percent }
+\newlabel{fig:masses}{{2}{3}}
+\citation{opencv_library}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces View of string hanging between teeth on clamp.\relax }}{4}\protected@file@percent }
+\newlabel{fig:clamp}{{3}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Side view of mass zeroed against ruler.\relax }}{4}\protected@file@percent }
+\newlabel{fig:zeroed}{{4}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Data}{5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Screenshot of thresh (left) and contour (right) views provided by OpenCV during video. The thresh view shows which areas of the frame are within the specified colour threshold determined in advance by identifying the RGB values of the yellow mass. The contour shows the circular approximation made by OpenCV in green and the center of the circle in blue. The position in pixels from the top of the frame is recorded every time the mass can be identified.\relax }}{5}\protected@file@percent }
+\newlabel{fig:opencvView}{{5}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Raw data as mapped by OpenCV at specified frame. Video was recorded at 29.97 frames per second. Three distinct outliers can be seen around 520 seconds, 730 seconds, and 790 seconds. These occur because a foot entered the frame at those times, causing a tracking error in OpenCV. Error bars are excluded from this graph because data from OpenCV is interpreted with uncertainties in Figure 7\hbox {}; this graph only depicts information developed by OpenCV.\relax }}{5}\protected@file@percent }
+\newlabel{fig:rawData}{{6}{5}}
+\citation{labManual}
+\citation{2020SciPy-NMeth}
+\citation{labManual}
+\citation{2020SciPy-NMeth}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Data collected at specified frame, correcting for outliers and tracking errors after approximately N cycles. The graph featuring 3.5 cycles (left) depicts vertical error bars marking an uncertainty of$\pm $0.02 radians (see 4.2\hbox {}) and horizontal error bars marking $\pm $0.02 seconds (half of a frame). Graphs for 10.5 and 352 cycles (center and right) are shown to better illustrate the decay of the amplitude of the pendulum. It is worth noting that during the first few cycles the mass goes out of frame at its maximum amplitude on one side. This can be seen in the apparent sharp edges in the early troughs of the graph depicting 10.5 cycle and the 'blunt' edge of the bottom left side of the graph depicting 352 cycles.\relax }}{6}\protected@file@percent }
+\newlabel{fig:correctedGraph}{{7}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Graph depicting relative maximums at specified times as determined by Open CV (green) with overlaid regression (red) in the form $\theta (t) = \theta _oe^{-t/\tau }$, where $a = 0.198$ and $\tau = 1380$ (left). The graph depicting the residuals (blue) between the data and the regression (right) illustrates some significant discrepancy between the model and the measurement (a black line at 0 rad discrepancy is used to help illustrate this). This is further discussed in 4.2\hbox {}. Both graphs feature error bars (orange) every 5 data points, illustrating a measurement error of 0.02 radians in the amplitude. Note that there are some large gaps between error bars due to problems determining a local maximum for certain times as a result of measurement errors.\relax }}{6}\protected@file@percent }
+\newlabel{fig:bestFit}{{8}{6}}
+\citation{labManual}
+\citation{2020SciPy-NMeth}
+\citation{labManual}
+\citation{2020SciPy-NMeth}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Graph depicting period of pendulum as a function of amplitude, shown in blue, modeled against regression of quadratic power series in the form $T = T_{o} + B\theta _{0} + C\theta _{o}^{2}$ \cite  {labManual}, shown in in green, (top). Uncertainties, shown in orange, associated with the period (vertical axis) are the measurement uncertainty of 0.2 seconds and the uncertainty in the amplitude (horizontal axis) is the measurement error of 0.02 rad (see 4.1\hbox {} for explanation of both). The line of best fit has parameters $T_o = 2.72$, $B = -0.02 $, and $C = 0.4$. The values were found using the optimize library in SciPy \cite  {2020SciPy-NMeth}; a discussion of the uncertainties associated with these values can be found in section 6\hbox {}. The 'jump' in the graph between about -0.11 rad and 0.11 rad is a result of the recording being stopped before the pendulum reached rest. Otherwise, the data used was recorded in the same manor as described in section 2\hbox {}. The second graph (bottom) shows the residuals between the curve and the data. It can be seen that all of the data points fall within the uncertainty, meaning we can consider the result to be statistically zero for the amplitudes used when modeled against a quadratic power series. A calibration line at 0 is provided in gray.\relax }}{7}\protected@file@percent }
+\newlabel{fig:QuadraticPowerSeries}{{9}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Graph depicting period of pendulum as a function of amplitude, shown in blue, modeled against regression of cubic power series in the form $T_o = 2.72 \pm 0.02 sec$, $B = 0.0 \pm 0.2 \frac  {s}{rad}$, $C = 0.4 \pm 0.8 \frac  {s}{rad^2}$, and $D = -2 \pm 5 \frac  {s}{rad^3}$ \cite  {labManual}, shown in in red, (top). Uncertainties, shown in orange, associated with the period (vertical axis) are the measurement uncertainty of 0.2 seconds and the uncertainty in the amplitude (horizontal axis) is the measurement error of 0.02 rad (see 4.1\hbox {} for explanation of both). The line of best fit has parameters $T_o = 2.7$, $B = 0.04 $, $C = 0.4$, and $D = -2$. The values were found using the optimize library in SciPy \cite  {2020SciPy-NMeth}; a discussion of the uncertainties associated with these values can be found in section 6\hbox {}. The 'jump' in the graph between about -0.11 rad and 0.11 rad is a result of the recording being stopped before the pendulum reached rest. The second graph (bottom) shows the residuals between the curve and the data. It can be seen that all of the data points fall within the uncertainty, meaning we can consider the result to be statistically zero for the amplitudes used when modeled against a cubic power series. A calibration line at 0 is provided in gray.\relax }}{8}\protected@file@percent }
+\newlabel{fig:CubicPowerSeries}{{10}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \leavevmode {\color  {red}This figure contains a summary of the raw data collected for the half period from various specified string length and constant mass. All points were found by counting the number of frames between when the center of the mass stopped moving in one direction to when the mass stopped moving in the other direction - half of a complete oscillation - and converting that measurement to a time using the frame rate of the video (29.92 fps). A table showing the raw data in terms of frames along with the averages used in Figure 12\hbox {} can be found in Appendix 8.3\hbox {}. The purple horizontal line in all of the graphs represents the average of the 10 points shown for that particular graph. The uncertainties shown represent the length of one frame; the software used to track the pendulum reported the mass as still (not moving) for about 3 frames. In these cases, the count was started on the second frame. The standard deviations of each data set are: $\sigma _a = 0.02s$, $\sigma _b = 0.02s$, $\sigma _c = 0.02s$, $\sigma _d = 0.01s$, $\sigma _e = 0.02s$, $\sigma _f = 0.02s$. These were calculated using equation 14\hbox {}. Note that all are less than the measurement uncertainty of 0.03 seconds}\relax }}{9}\protected@file@percent }
+\newlabel{fig:RawLengthData}{{11}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces \leavevmode {\color  {red}Graph of measured period as a function of string length. All uncertainties are the measurement uncertainty of 0.03 seconds (1 frame); this is greater than the statistical uncertainty of each point. The data was modeled against the function $T = k(L_o + L)^n$. Values of 2.1 $\pm $ 0.1 for $k$, -0.08 $\pm $ 0.09 for $L_o$, and 0.48 $\pm $ 0.04 for $n$ where obtained using methods described in Section 7.1\hbox {}. A graph with linear axes is shown on top and a graph with logarithmic axes is shown on the bottom. }\relax }}{10}\protected@file@percent }
+\newlabel{fig:GraphedLengths}{{12}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \leavevmode {\color  {red}This figure contains a summary of the raw data collected for the half period from various specified masses with a constant string length. All points were found by counting the number of frames between when the center of the mass stopped moving in one direction to when the mass stopped moving in the other direction - half of a complete oscillation - and converting that measurement to a time using the frame rate of the video (29.92 fps). A table showing the raw data in terms of frames along with averages can be found in Appendix 8.3\hbox {}. The purple horizontal line in all of the graphs represents the average of the 10 points shown for that particular graph. The uncertainties shown represent the length of one frame; the software used to track the pendulum reported the mass as still (not moving) for about 3 frames. In these cases, the count was started on the second frame. The standard deviations of each data set are: $\sigma _a = 0.02s$, $\sigma _b = 0.02s$, $\sigma _c = 0.01s$, $\sigma _d = 0.02s$, $\sigma _e = 0.02s$, $\sigma _f = 0.02s$. These were calculated using equation 14\hbox {}. Note that all are less than the measurement uncertainty of 0.03 seconds. The averages for each are: $\sigma _a = 43.7s$, $\sigma _b = 43.8s$, $\sigma _c = 43.9s$, $\sigma _d = 43.7s$, $\sigma _e = 34.6s$, $\sigma _f = 43.7s$}\relax }}{11}\protected@file@percent }
+\newlabel{fig:RawMassData}{{13}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces \leavevmode {\color  {red}This figure shows a summary of the data collected to analyze the relationship between period and mass. The figure on the top represents the averages of all 7 data sets with error bars representing an uncertainty of 0.03s, corresponding to 1 frame. The outlier at 430.7 grams is removed for reasons discussed in Section 7.2\hbox {}. The residuals between remaining points and their average are shown on the bottom. It can be clearly seen that each point is statistically consistent with the average.}\relax }}{12}\protected@file@percent }
+\newlabel{fig:AnalyzedMassVsPeriod}{{14}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Sources of Error}{12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Measurement Errors}{12}\protected@file@percent }
+\newlabel{SourcesOfError:MeasurementErrors}{{4.1}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Analysis Errors}{13}\protected@file@percent }
+\newlabel{SourcesOfError:AnalysisQFactor}{{4.2}{13}}
+\citation{labManual}
+\citation{labManual}
+\citation{2020SciPy-NMeth}
+\citation{nasa_2015}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Q Factor}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Counting Cycles}{14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Determining $\tau $}{14}\protected@file@percent }
+\newlabel{eq:qTauRelation}{{1}{14}}
+\newlabel{eq:theta}{{2}{14}}
+\newlabel{eq:shortTheta}{{3}{14}}
+\citation{2020SciPy-NMeth}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Relationship Between Period and Amplitude}{15}\protected@file@percent }
+\newlabel{PeriodVsAmp}{{6}{15}}
+\newlabel{eq:PeriodVsAmp}{{6}{15}}
+\citation{2020SciPy-NMeth}
+\@writefile{toc}{\contentsline {section}{\numberline {7}\leavevmode {\color  {red}Determining Relationship Between String length and Period, and Mass and Period}}{16}\protected@file@percent }
+\newlabel{sec:Lab4Main}{{7}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}\leavevmode {\color  {red}Relationship Between String Length and Period}}{16}\protected@file@percent }
+\newlabel{sec:StringVsPeriod}{{7.1}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}\leavevmode {\color  {red}Relationship Between Mass and Period}}{16}\protected@file@percent }
+\newlabel{sec:PeriodVsMass}{{7.2}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Appendix}{17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Equations and Calculations}{17}\protected@file@percent }
+\newlabel{app:Calc}{{8.1}{17}}
+\newlabel{calc:tauApprox}{{9}{17}}
+\newlabel{calc:tauApprox}{{10}{17}}
+\newlabel{calc:thetaApprox}{{11}{17}}
+\citation{khan_2020}
+\newlabel{eq:stdev}{{14}{18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Programs Used}{18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}\leavevmode {\color  {red}Raw Data}}{19}\protected@file@percent }
+\newlabel{app:RawData}{{8.3}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces \leavevmode {\color  {red}Number of frames counted for various string lengths. Each value represents the number of frames counted between when the mass stopped moving to the left (negative direction) and when the mass stopped moving to the right (positive direction). The uncertainties in each of the lengths are $\pm $ 0.1cm, as determined in Section 2\hbox {}.}  \relax }}{19}\protected@file@percent }
+\newlabel{fig:RawStringLengths}{{15}{19}}
+\bibdata{References.bib}
+\bibcite{opencv_library}{1}
+\bibcite{labManual}{2}
+\bibcite{2020SciPy-NMeth}{3}
+\bibcite{nasa_2015}{4}
+\bibcite{khan_2020}{5}
+\bibstyle{ieeetr}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces \leavevmode {\color  {red}Number of frames counted for various masses. Each value represents the number of frames counted between when the mass stopped moving to the left (negative direction) and when the mass stopped moving to the right (positive direction). The uncertainties for each of the weight measurements is $\pm $0.1 grams, as discussed in Section 2\hbox {}.}  \relax }}{20}\protected@file@percent }
+\newlabel{fig:RawMasses}{{16}{20}}

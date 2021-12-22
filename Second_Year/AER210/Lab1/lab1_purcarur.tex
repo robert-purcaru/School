@@ -1,0 +1,53 @@
+\documentclass[11pt]{article}
+\usepackage{navigator}
+\usepackage{mathtools} 
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[a4paper, total={6in, 9.5in}]{geometry}
+\usepackage{float}
+\usepackage{url}
+\usepackage[margin=.5in, labelfont = bf]{caption}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor,cancel}
+\usepackage[raggedright]{titlesec}
+
+
+\graphicspath{ {./images/} }
+
+\begin{document}
+    \title{AER210 Lab 1: Introduction to Microfluidics}
+        \author{Robert Purcaru}
+        \date{\today}
+    \maketitle
+
+    \section{Introduction}
+        This report follows a lab which studied microfluidics by passing a small volume of liquid, which suspended microscopic fluorescent spheres, through channels in microfluidics chip comprised of four different features of interest and photographing the fluid to observe the streaks formed by the fluorescent spheres. The information gathered in this lab is not only relevant to a strict study of fluids, it also sees applications in other fields, particularly chemistry and biology, where microfluidics is used in processes like DNA sequencing. This lab demonstrates the use of Bernoulli's equation, equation \ref{eqn:bernoulli}, and the continuity equation, equation \ref{eqn:continuity}, as the gravitational potential, direction of flow and area of channel are varied. The objective of this experiment is to not only confirm the models put forward by equations \ref{eqn:bernoulli} and \ref{eqn:continuity}, but also to introduce the students performing the experiment to fluid mechanics.
+
+        \begin{equation}\label{eqn:bernoulli}
+            \frac{P}{\rho} + \frac{v^2}{2} + gz = constant
+        \end{equation}
+        \begin{equation}\label{eqn:continuity}
+            A_1v_1=A_2v_2
+        \end{equation}
+
+
+    \section{Experimental Procedures and Results}
+        The procedure outlined in the lab manual \cite{LabManual} was followed with all pictures used in the analysis being taken using the 10x objective lens on the microscope. Using a hemocytometer, pictures were taken using the 10x objective lens to determine that the the resolution of our pictures was 0.924  $\pm$ 0.003 $\mu$m/px. 
+
+        To measure individual streaks, the images were imported into Microsoft Paint and 3 streaks were measured at each area of interest. These values were then averaged with the error of each average being derived from the uncertainty in the measurement for each streak. These results can be seen in 
+
+    \section{Error Analysis}
+    Initially, the exposure of the camera was set to 50.6ms but was later changed to 78.4ms which lead to improved image quality. As a result, the values from the latter parts of the lab - involving the 90 degree bend and the sinusoidal channel - 
+
+    The error for each measurement was inconsistent because judging where a streak ended could not be done consistently. As such, the uncertainty in the length of streaks varied from  $\pm$6px to $\pm$12px. 
+    \section{Discussion}
+
+    \section{Conclusion}
+       
+
+
+    \bibliography{References.bib}
+    \bibliographystyle{ieeetr}
+
+
+\end{document}

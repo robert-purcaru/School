@@ -1,0 +1,112 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/crobe/Desktop/School/ECE253/lab3/part_3
+vFullAdder
+Z1 !s110 1633633911
+!i10b 1
+!s100 O0WXKcJMLTNeW<9e4FCJX0
+I<TONo5`;ST2[X]cifCkW<1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1633633697
+Z4 8part3.v
+Z5 Fpart3.v
+L0 73
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1633633911.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+n@full@adder
+vMux
+R1
+!i10b 1
+!s100 L`Bk[BoCS93AzjUaNA@?R3
+I@kIOQkb4oQ^GZS4hnP4BX0
+R2
+R0
+R3
+R4
+R5
+L0 91
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@mux
+vpart2
+!s110 1633569469
+!i10b 1
+!s100 7zYg>SAJ;=>zkc4GZj;5V2
+IQ?J?6[o<Qc]OT8Sc8n=l`2
+R2
+R0
+w1633559925
+8part2.v
+Fpart2.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1633569469.000000
+!s107 part2.v|
+!s90 -reportprogress|300|part2.v|
+!i113 1
+R10
+vpart2_a
+R1
+!i10b 1
+!s100 F9bmWVV4Dl?bD=cFE[72L2
+IbS:J26:iV46aHDViI@X8<1
+R2
+R0
+R3
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart3
+R1
+!i10b 1
+!s100 LJdJYmKBXBmF;`:cLoo^a1
+I`3;92fmX5<Y<>Qd11z8^<2
+R2
+R0
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/crobe/Desktop/School/ECE253/lab6/part3
+vcontrol
+Z1 !s110 1636155681
+!i10b 1
+!s100 Ok1<KfjB=I@A?g2djToiC0
+I70z2e8bH^7`SV>4d6kKbD1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1636150823
+Z4 8part3.v
+Z5 Fpart3.v
+L0 51
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1636155681.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 FR8W3YVFXG[GIVQQcmnn63
+I>=`VJ@aI>:A2>_5zMDV8Z3
+R2
+R0
+R3
+R4
+R5
+L0 159
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart3
+R1
+!i10b 1
+!s100 GKl?C2[8`ZmG7La4YXKXU2
+I6d9=V]>6?]k7UIo1@K3P_0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

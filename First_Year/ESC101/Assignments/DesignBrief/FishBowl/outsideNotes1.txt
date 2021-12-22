@@ -1,0 +1,58 @@
+1 persond doesnt think there can be a general solution
+
+1 person suggests keeping track of prev projects
+
+1 person suggests algorithms using grouped tasks
+
+1 person suggests tayloring solution to each particular person
+	goes on to suggests its not practical to ask each student how much time they spent
+
+1 person suggests cataloguing guess vs real logging
+	counter suggests data points are limited
+
+1 person suggests using data from multiple students
+
+1 person suggests bringing up personality test to solve problem.
+
+1 person suggests tracking time vs progress 
+
+
+ideas so far (0745)
+	taking individual historical
+	taking group historical
+	making personality test
+	find general forumla for how long an estimate takes
+	assign timing based on assignment weight
+
+
+
+
+TODO: 
+	Tune metrics to suggested ideas
+	Adjust and cleaen up metrics
+	Clean up different types of information
+	Lyndon wasn't completely clear on what the design could be
+		get more specific with metrics (should take a set of inputs, give these outputs, etc.)
+			Make point to explor types of models that work
+	make reference to diagram more explecit
+
+\section{Metrics}
+        The following listed individual metrics will be determined based on the above objectives.
+    \begin{subs}
+        \subsection{Deviations of Time Approximates}
+        A quantitative metric that measures the average ratio between time estimates and actual task duration as:
+        \begin{center}
+            $\frac{estimates-actual}{actual}\cdot 100\%$
+        \end{center}
+        This measurement will be in percentile form(\%) using at least 3 trials for different categories of tasks. Providing a relative reference instead of an absolute value will allow comparisons, thus demonstrating the actual precision of potential solutions. 
+        \subsection{Personalization of solutions}
+        A qualitative metric that follows the rubrics below:
+        
+        \subsection{Number of Available Accessible Platform}
+        A quantitative metric that measures the number of 
+        \subsection{Tool-learning effectiveness for Users}
+        A quantitative metric
+        \subsection{Information Security for Users}
+        A quantitative metric
+    \end{subs}
+

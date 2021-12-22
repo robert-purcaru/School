@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/crobe/Desktop/School/ECE253/lab6/part2
+vcontrol
+Z1 !s110 1636126042
+!i10b 1
+!s100 1kZA0=Z[@PCbFo8G]^CVK3
+IzNSIQ5OF?aX?gHo?=7>em0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1636125896
+Z4 8part2_alex.v
+Z5 Fpart2_alex.v
+L0 59
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1636126042.000000
+Z8 !s107 part2_alex.v|
+Z9 !s90 -reportprogress|300|part2_alex.v|
+!i113 1
+Z10 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 jFR8=1;W@FIOR?7cPBc;A1
+I>j=@i6_cVJ<hi4e;ANeEd3
+R2
+R0
+R3
+R4
+R5
+L0 183
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart2
+R1
+!i10b 1
+!s100 4Qb9iJMNFgjQ]mMFBjf7Z2
+Ie:@[j[If<PaYOVi<DF:L20
+R2
+R0
+R3
+R4
+R5
+L0 6
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

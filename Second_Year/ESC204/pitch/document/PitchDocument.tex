@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage{navigator}
 \usepackage{mathtools} 
 \usepackage{graphicx}
@@ -12,7 +12,6 @@
 \usepackage{setspace}
 \usepackage{blindtext}
 \usepackage{multicol}
-
 
 
 \linespread{1.15}
@@ -45,29 +44,74 @@
     
 
     \section{Introduction}
-        \subsection{Value Statement}
-        **UN Bullshit here, overview of situation and requirements 
+        \subsection{Value Statement}\label{subsec:ValueStatement}
+
+            Many developing countries are hindered by a lack of waste management infrastructure, especially when it comes to sorting and recycling plastics. Recycling centers are few and far in between, leaving many people to dispose of their waste in landfills, mixing recyclable and non-recyclable materials together. In recent decades, several projects have sprung up to address this growing crisis \cite{wansi_2022} \cite{dow_2022}. Still, much of the plastic waste sorting is done by hand by individuals sorting through landfills for recyclable plastics \cite{GhanaSorting}.
+            
+            Four significant facts have been identified by our Global Context Provider (GCP): 
+
+            \begin{enumerate}
+                \item Sorting at the point of waste introduction is uncommon; people don't tend to sort their trash from recyclables.
+                \item Recycling locations are few and far in between.
+                \item People recognize the value in sorting their plastics, both environmentally and economically. 
+                \item People recognize that a better solution for plastic sorting is necessary.
+            \end{enumerate}
+
+            Our GCP further stressed the importance for the need to focus on sorting at the point of collection, reducing the burden on waste pickers to increase recycling throughput.
+
+            Important in developing a product that truly helps a community is addressing the sustainable development of that community. The United Nations Sustainable Development Goals (UNSDGs) \cite{UNSDG} provides 17 goals to achieve in developing countries to produce a sustainable future. This opportunity provides the chance to address Goal 1: No Poverty by developing jobs in waste management, Goal 9: Industry, Innovation, and Infrastructure by instantiating infrastructure to set the precedent for future development, Goal 11: Sustainable Cities and Communities by retrofitting existing public works for sustainable waste management, and Goal 14: Life Below Water by reducing the impact plastics and landfills have on bodies of water.
+
+            The combination of these factors leads us to our team's value statement:
+
+            \textbf{To design, develop, and demonstrate an aid for the plastic waste crisis that does not require attention at the point of waste introduction, that reduces the burden on existing infrastructure, that increases recycling throughput, and that does so while maintaining or creating relevant jobs. }
+
         \subsection{Our Design}
+            We devised and developed a plastic sorting machine that would sort materials into two groups by measuring their density and colour, thereby reducing the load on waste pickers. Through our research, we identified several ways of sorting plastics, however settled on a combination of density and colour as they seemed to provide the clearest distinctions \cite{gent2009recycling} \cite{safavi2010sorting} \cite{bruno2000automated} with the most feasible implementation. 
+            
+            Our design consists of two cooperative systems: a pivoting scale, and an optical scanner. By  measuring the volume and color composition of a given set of materials, our design seeks to separate various materials based upon this distinction. The machine can be set to separate a variety of different materials, performing a binary search like process if run multiple times.
+
+            Our design can be implemented at the point of collection to reduce the burden on plastic pickers by sorting batches of materials into piles that are more and less likely to be recyclable. This could increase the throughput of recyclable material by decreasing the time it takes to separate recyclable materials from non-recyclables while still requiring a worker to introduce material to the sorter and perform a final, more refined sorting of the desired pile.
+
+            ** FIGURE OF DESIGN **
 
     \section{Background}
         \subsection{Stakeholders}
+            First and foremost among our stakeholders is the GCP, Adwoa Coleman. Being the only person we had the opportunity with on-the-ground experience in the environment in question, our design is built to address her specifications; the situation she presents is the one we're designing for.
+            
+            Equally impacted by but less accessible to us are the people living in Ghana whom our solution may affect either directly affect (i.e. garbage collectors, recycling workers, etc.) or indirectly affect (i.e. people in Ghana producing and feeling the impact of pollution). This group of stakeholders is the most broad as it houses everybody besides Adwoa Coleman that may be impacted by our design but whose personal experience remains allusive to us. Still, they are largely the focus for the impact of our design.
+            
+            Finally, the last group of stakeholders we consider are all the people involved with the ESC204 course, including but not limited to: our team, the FaCTs, MyFab and other ESC204 teams. This group of people will likely feel the most direct affect of our work while influencing the design decisions we make. It is worth noting that this group of stakeholders serves as a practical grounding for our design; the scope of the implementation of our design is necessarily limited by the overarching scope of the ESC204 course. 
 
         \subsection{Scope}
+            Our design seeks to improve upon a job that is already performed relatively quickly by human workers. Such an ambitious goal requires thorough justification and testing before final development and implementation. Accordingly, our primary goal was to test the feasibility of a color and density sorting system made with relatively low cost materials. An ultimate implementation of our design would seek to address select UNSDGs as outlined in section \ref{subsec:ValueStatement}, doing so if and only if our testing and attempts at optimization demonstrated that our design could indeed improve sorting throughput.
+
+            The scale and degree to which we could test our concept was limited by the materials available to us and the time we had available. Our original design concept called for a camera to act as a sensor, however supply limitations excluded this from our scope, leading our team to develop our own light and color sensor. The scope of our solution can be observed to change as the design constraints were adjusted by the FaCTs stakeholders. Ultimately, the limitation to scope imposed by materials was limited to that which could be acquired in reasonable quantity from MyFab based upon their stock at the time. 
 
         \subsection{Environment}
+            Ultimately, our design would be expected to work alongside waste pickers to ease their burden of sorting. It should therefore be portable, rechargeable, and rugged enough to withstand regular use and abuse. Ghana also experiences dry and wet seasons; the solution should be able to function in heat exceeding 40$^o$C \cite{GMET}. Any enclosure designed for our product would be expected to do all this while presenting a safe and easy to maintain form factor so as to allow for on site, or otherwise, simple maintenance. 
 
         \subsection{Prior Designs}
 
         \subsection{Requirements}
+            At a high level, our solution is expected to improve the throughput of plastics from landfills to recycling facilities. The design should accomplish this by analyzing a sample to gather information about density and color. Then, it should determine if it is likely to be recyclable by comparing the analysis to a reference dataset before dispensing it onto one of two piles. 
+
+            For the purposes of proving the concept that sorting plastics based upon density and color is sufficient to distinguish between recyclable and non-recyclable samples, the design must be able to successfully sort individual samples of both recyclable and non-recyclable materials, with no further constraints. This proof of concept would act as the basis for either further development into a final product or dismissal of the concept, making this requirement critical above all others.
+
+            With the concept proved, the performance of the ultimate design should be tested by introducing a variety of materials (recyclable, non-recyclable, as well as a combination of the two) to ensure that a great proportion is sorted correctly to minimize subsequent screening time of the sorted pile. The design should also be tested against a human subject to determine if any improvement is achieved against human performance. Doing so would involve the human feeding material into the machine as quickly as it could handle it 
+
+            For the enclosure, to achieve the desired waterproofing, IPX4 \cite{gniazdo_2021} or greater should be met and demonstrated against the standard IPX testing procedures. To address heat in the environment, no materials should be used that warp or become damaged in temperatures approaching 50$^o$C \cite{GMET}. This could be verified using a space heater, a thermometer and a small enclosure to leave the design exposed to. 
 
     \section{Design Process}
-        \subsection{Meta-Design}
-            \subsubsection{Project Management}
-            
-            \subsubsection{Design Decisions}
 
         \subsection{Prototyping}
+            Fundamentally, our design sought to determine the practicality of a density and colour based sensing solution for plastics sorting. To this end, our team planned to do much of our testing and work in software by using a camera as the basis for most of our measurements. Unfortunately, as the scope of our design shifted, narrowing the availability of materials, our group had to refocus our attention on how spacial and color information could be determined without a camera.
 
+            Our first round of testing therefore
+
+        \subsection{Design Decisions}
+
+        \subsection{Project Management}
+            
         \subsection{Reflection on Global Virtual Interaction}
             Our team gleaned no insight or information from any feedback provided to us by our GSU interaction. The interaction felt forced and motivated solely by curricular demand, proving to be a superfluous waste of time and resources.
             

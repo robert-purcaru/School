@@ -1,33 +1,32 @@
-\contentsline {section}{\numberline {1}Executive Summary}{2}%
-\contentsline {section}{\numberline {2}Introduction}{4}%
-\contentsline {subsection}{\numberline {2.1}Value Statement}{4}%
-\contentsline {subsection}{\numberline {2.2}Our Design}{4}%
-\contentsline {section}{\numberline {3}Background}{4}%
-\contentsline {subsection}{\numberline {3.1}Stakeholders}{4}%
-\contentsline {subsection}{\numberline {3.2}Scope}{4}%
-\contentsline {subsection}{\numberline {3.3}Environment}{4}%
-\contentsline {subsection}{\numberline {3.4}Prior Designs}{4}%
-\contentsline {subsection}{\numberline {3.5}Requirements}{4}%
-\contentsline {section}{\numberline {4}Design Process}{4}%
-\contentsline {subsection}{\numberline {4.1}Meta-Design}{4}%
-\contentsline {subsubsection}{\numberline {4.1.1}Project Management}{4}%
-\contentsline {subsubsection}{\numberline {4.1.2}Design Decisions}{4}%
-\contentsline {subsection}{\numberline {4.2}Prototyping}{4}%
-\contentsline {subsection}{\numberline {4.3}Reflection on Global Virtual Interaction}{4}%
-\contentsline {section}{\numberline {5}Final Design}{4}%
-\contentsline {subsection}{\numberline {5.1}About the Design}{4}%
-\contentsline {subsection}{\numberline {5.2}Limitations}{4}%
-\contentsline {subsection}{\numberline {5.3}Justification}{4}%
-\contentsline {subsection}{\numberline {5.4}On Our Team's Interaction}{4}%
-\contentsline {section}{\numberline {6}Conclusion}{4}%
-\contentsline {subsection}{\numberline {6.1}Reflection on Final Design}{4}%
-\contentsline {subsection}{\numberline {6.2}Next Steps}{4}%
-\contentsline {section}{\numberline {7}Appendix}{6}%
-\contentsline {subsection}{\numberline {7.1}Team}{6}%
-\contentsline {subsubsection}{\numberline {7.1.1}Team Values Statement}{6}%
-\contentsline {subsubsection}{\numberline {7.1.2}Benedek}{6}%
-\contentsline {subsubsection}{\numberline {7.1.3}Charles}{6}%
-\contentsline {subsubsection}{\numberline {7.1.4}Katarina}{6}%
-\contentsline {subsubsection}{\numberline {7.1.5}Robert}{6}%
-\contentsline {subsubsection}{\numberline {7.1.6}Ria}{6}%
-\contentsline {subsection}{\numberline {7.2}Bill of Materials}{6}%
+\contentsline {section}{\numberline {1}Executive Summary}{2}{}%
+\contentsline {section}{\numberline {2}Introduction}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Value Statement}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Our Design}{4}{}%
+\contentsline {section}{\numberline {3}Background}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Stakeholders}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Scope}{5}{}%
+\contentsline {subsection}{\numberline {3.3}Environment}{6}{}%
+\contentsline {subsection}{\numberline {3.4}Prior Designs}{6}{}%
+\contentsline {subsection}{\numberline {3.5}Requirements}{6}{}%
+\contentsline {section}{\numberline {4}Design Process}{7}{}%
+\contentsline {subsection}{\numberline {4.1}Prototyping}{7}{}%
+\contentsline {subsection}{\numberline {4.2}Design Decisions}{7}{}%
+\contentsline {subsection}{\numberline {4.3}Project Management}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Reflection on Global Virtual Interaction}{7}{}%
+\contentsline {section}{\numberline {5}Final Design}{7}{}%
+\contentsline {subsection}{\numberline {5.1}About the Design}{7}{}%
+\contentsline {subsection}{\numberline {5.2}Limitations}{7}{}%
+\contentsline {subsection}{\numberline {5.3}Justification}{7}{}%
+\contentsline {subsection}{\numberline {5.4}On Our Team's Interaction}{7}{}%
+\contentsline {section}{\numberline {6}Conclusion}{7}{}%
+\contentsline {subsection}{\numberline {6.1}Reflection on Final Design}{7}{}%
+\contentsline {subsection}{\numberline {6.2}Next Steps}{7}{}%
+\contentsline {section}{\numberline {7}Appendix}{9}{}%
+\contentsline {subsection}{\numberline {7.1}Team}{9}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}Team Values Statement}{9}{}%
+\contentsline {subsubsection}{\numberline {7.1.2}Benedek}{9}{}%
+\contentsline {subsubsection}{\numberline {7.1.3}Charles}{9}{}%
+\contentsline {subsubsection}{\numberline {7.1.4}Katarina}{9}{}%
+\contentsline {subsubsection}{\numberline {7.1.5}Robert}{9}{}%
+\contentsline {subsubsection}{\numberline {7.1.6}Ria}{9}{}%
+\contentsline {subsection}{\numberline {7.2}Bill of Materials}{9}{}%

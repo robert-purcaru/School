@@ -4,47 +4,45 @@ The top-level auxiliary file: PitchDocument.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
-I found no \citation commands---while reading file PitchDocument.aux
 Database file #1: References.bib
-You've used 0 entries,
+You've used 9 entries,
             1876 wiz_defined-function locations,
-            477 strings with 3490 characters,
-and the built_in function-call counts, 20 in all, are:
-= -- 0
-> -- 0
+            532 strings with 4741 characters,
+and the built_in function-call counts, 1686 in all, are:
+= -- 156
+> -- 63
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 9
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 26
+- -- 17
+* -- 110
+:= -- 249
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 9
+duplicate$ -- 73
+empty$ -- 186
+format.name$ -- 17
+if$ -- 408
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 9
+missing$ -- 4
+newline$ -- 30
+num.names$ -- 9
+pop$ -- 42
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 54
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 72
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 15
+width$ -- 10
+write$ -- 77

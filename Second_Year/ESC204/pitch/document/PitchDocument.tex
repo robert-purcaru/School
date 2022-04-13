@@ -32,7 +32,7 @@
     \newpage
 
 \begin{multicols*}{2}
-    \section{Executive Summary}
+    \section*{Executive Summary}
         Executive summary
 
     \newpage
@@ -63,7 +63,7 @@
 
             The combination of these factors leads us to our team's value statement:
 
-            \textbf{To design, develop, and demonstrate an aid for the plastic waste crisis that does not require attention at the point of waste introduction, that reduces the burden on existing infrastructure, that increases recycling throughput, and that does so while maintaining or creating relevant jobs. }
+            \textbf{To design, develop, and demonstrate an aid for the plastic waste crisis that does not require attention at the point of waste introduction, that reduces the burden on existing infrastructure, that increases recycling throughput, and that does so while maintaining or creating relevant jobs.}
 
         \subsection{Our Design}
             We devised and developed a plastic sorting machine that would sort materials into two groups by measuring their density and colour, thereby reducing the load on waste pickers. Through our research, we identified several ways of sorting plastics, however settled on a combination of density and colour as they seemed to provide the clearest distinctions \cite{gent2009recycling} \cite{safavi2010sorting} \cite{bruno2000automated} with the most feasible implementation. 
@@ -103,33 +103,94 @@
 
     \section{Design Process}
 
-        \subsection{Prototyping}
-            Fundamentally, our design sought to determine the practicality of a density and colour based sensing solution for plastics sorting. To this end, our team planned to do much of our testing and work in software by using a camera as the basis for most of our measurements. Unfortunately, as the scope of our design shifted, narrowing the availability of materials, our group had to refocus our attention on how spacial and color information could be determined without a camera.
+        \subsection{Overarching \\ Design Decisions}
+            Key among our design decisions was to use an combination optical, density sensing machine to determine if a sample could be recycled. Through our research, we were unable to find a product or design that incorporated these as a distinguishing mechanism on the scale we were targeting. Our research did however show that while recyclable and non-recyclable plastics have similar densities \cite{omnexus_2021}, the applications of recyclable plastics like PET, HDPE, and PE tend to be used in products like bottles, containers and bags \cite{HDPE} \cite{amp} \cite{omnexus_2017}, which can have a lower apparent density, given their enclosed air content\footnote{This is partly due to the manufacturing techniques these plastics lend themselves to \cite{thomas_2022}.} and tend to be partially transparent to some or all colours. Our decision to use density and colour as a basis for sorting was therefore informed by our research into the properties of recycled plastics. 
+            
+            Our decision to make a product which could be used by waste pickers on site was informed by our value statement; we wanted to develop something that could work unsupervised and ease the burden on waste pickers to increase the throughput of recyclable plastics. Plastics are generally identified by a small number molded into the item \cite{plasticactioncenter_2022} for human interpretation. Our design sought to remove the requirement that a human check every piece of potentially recyclable plastic for its identifier by reducing the size of the pool of plastics they were checking. By providing a human sorter with a partially sorted pile of waste, the volume of recyclable material the human can process should increase.  
 
-            Our first round of testing therefore
+        \subsection{Prototyping and \\ Application Design \\ Decisions}
+            Fundamentally, our design sought to determine the practicality of a density and colour based sorting solution. To this end, our team planned to do much of our testing and work in software by using a camera as the basis for most of our measurements. Unfortunately, as the scope of our design shifted, narrowing the availability of materials, our group had to refocus our attention on how spatial and color information could be determined without a camera.
 
-        \subsection{Design Decisions}
+            Our first round of testing was to determine if the photoresistors available at MyFab would be sensitive enough to act as our main optical sensors for either colour or simply area and volume. Cadmium sulphide photoresistors are sensitive to the vast majority of the visible light spectrum, but slightly more so to blue light than any other \cite{eepower_2017}. Knowing this, we tested the sensitivity with 5 different materials of varying darkness and opacity and found that resistance varied enough to distinguish between the materials. To test whether or not the photoresistors would be sensitive enough to colour to act as color sensors, we illuminated samples with coloured LEDs and found that when the colour of the LED was close to the color of the material, the resistance also changed measurably between trials. Most importantly however, in all the trials, the resistance was stable to about 1 part in 1000. This meant that the photoresistors would be sensitive enough to use as optical sensors in our final design.
+            
+            In order to transduce the varying resistance of the photoresistor to an analog signal our microcontroller could interpret, we started with a voltage divider. However, this limited the operational range of the signal, since the photoresistor's resistance varied between about 4k$\Omega$ and 8k$\Omega$ before going to an open circuit. To address this, our team tested a non-inverting amplifier circuit using an operational amplifier (opamp) to allow the signal to vary between 0V and the V$_{cc}$ of the microcontroller. 
+            
+            \begin{figure}[H]
+                \centering\includegraphics[width=0.7\linewidth]{OpAmpSch.PNG}
+                \captionsetup{width=\linewidth}
+                \caption{Schematic representation of non-inverting amplifier circuit used with photoresistors.}
+                \label{fig:opamp}
+            \end{figure}
+
+            The benefits of this were threefold: first, our sensors operational range increased to encompass the full range of ADC values, increasing our measurement resolution. Second, it does so while protecting the microcontroller from overvoltage as the rail-to-rail opamps we used saturate at the supply voltages. Third, the supply for the photoresistor voltage divider could be a 5V LDO, meaning the supply noise would be filtered and minimized\footnote{This is opposed to using the 12V switch supply used to drive the motors, which had considerable noise.}. After adding sets of red, green, blue, and yellow LEDs, our color sensing concept had been demonstrated, allowing us to move on to the platform that would carry it. 
+
+            Our first scanning prototype involved an array of 8 photoresistors on a 1/4" birch dowel rail system pulled by a stepper motor. While this did demonstrate that our design could scan a surface with some accuracy, the resolution and rail system were ultimately inadequate. To address the former, we added another 7 photoresistors and removed the yellow LEDs since the yellow results were indistinguishable from having red, green, and blue all on together. We also found that running the LEDs with microcontroller power supply was inadequate as the current it could supply was too low for the required brightness. To address this, we used a series of MOSFETs to act as low-side switches for the LEDs, powering them with the same power supply that was running the motors.
+            
+            To address the rail system, we redesigned our pulling mechanism to be driven by a threaded rod rotating inside a captive nuts on our sensor gantry, allowing it to be moved in both directions on its axis. Both of these changes dramatically improved the performance of our design for both speed and resolution.
+
+            \begin{figure}[H]
+                \centering\includegraphics[width=\linewidth]{LEDs.PNG}
+                \captionsetup{width=\linewidth}
+                \caption{Photoresistor and LED arrays on first scanning prototype.}
+                \label{fig:LEDs}
+            \end{figure}
+            
+            \begin{figure}[H]
+                \centering\includegraphics[width=\linewidth]{BirdsEye.PNG}
+                \captionsetup{width=\linewidth}
+                \caption{Overhead view of first scanning prototype. Original rail system can be seen with stepper motor pulling gantry with wire.}
+                \label{fig:Overhead}
+            \end{figure}
+
+            The scale and rotator, being the simplest and most \textit{believable} part of our design was prototyped in a limited fashion. Testing of the load cell was done quite late in the design process, however it provided the desired resolution without much work. The rest of the platform was designed and manufactured late in the design process but also worked as intended without problem.
 
         \subsection{Project Management}
             
         \subsection{Reflection on Global Virtual Interaction}
-            Our team gleaned no insight or information from any feedback provided to us by our GSU interaction. The interaction felt forced and motivated solely by curricular demand, proving to be a superfluous waste of time and resources.
+            Our team gleaned no insight or information from any interaction with or feedback from our GSU interaction. The interaction felt forced and motivated solely by curricular demand, proving to be a superfluous waste of time and resources.
             
     \section{Final Design}
 
         \subsection{About the Design}
+            Our final design carried some aspects from our prototypes forward while addressing many of the greater pitfalls in the original design. First, one of the greatest problems with the design was the wiring. Constraints presented to us by the FaCTs effectively scoped out using anything but jumper wires everywhere as they could be disassembled easily. Our team pushed back against this constraint for our final design, owing to the undue difficulty and limitation this forced upon us; a rugged solution would be impossible to achieve without proper harnessing between the gantry and the rest of the system. As a result, our team moved to soldering the components on the gantry to prototyping boards and wiring those to the breadboards our microcontroller and ICs were mounted to. This reduced the impact the harnessing had on our design, allowing for a more rugged design to meet our requirements. 
 
-        \subsection{Limitations}
+            Our final design also addressed motion of the gantry, which was lackluster in our prototype. By using a threaded rod to drive a pair of captive nuts, we not only increased the rigidity of our system, but also increased the resolution in the axis of the rod by having much more precise control of the position of the gantry. This helped us achieve our requirement of accurate and consistent sorting materials by color and density through the improvement in resolution and repeatability.
 
-        \subsection{Justification}
+            ** BEN WRITE ABOUT THE PLATFORM **
+
+            ** PICTURE OF ALL THE PARTS TOGETHERE HERE **
+        
+            
+
+        \subsection{Performance, \\Limitations, \\and Justification} \label{subsec:PerformanceLimitationsJustification}
+
+            Through the final testing our group conducted, we were able to achieve some of the performance we sought for; our first and final prototypes indicate that a solution with colour and density sorting is feasible within the context provided. Our final design is able to identify and sort materials like plastic bags, bottles, containers, and loose scraps from heavier, non plastic materials. It is able to successfully identify and record the shape of the scanning subject while weighing it and collecting color information. 
+            
+            ** CHARLES CAN WE GET OR \textit{GENERATE} A PICTURE OF THE DISPLAY WE WOULD GET OUT OF THE ARDUINO **
+
+            It is however less successful when it comes to distinguishing between recyclable and non-recyclable plastics. The resolution of the density is not fine enough to do so in some cases and in others the plastics are simply too similar to distinguish. Still, this falls within our requirements; the partially sorted pile the design produces requires some human attention, but is still more sorted than the originally introduced pile. 
+
+            The major pitfall of our design is the speed with which it scans. The design is limited by two factors: first, the microcontroller we used - ATMEGA 2560 - takes an appreciable amount of time to read, store and offload all of the analog signals from each of the photoresistors and advance the stepper motor. This is generally because of the abysmal ADC performance on Arduinos and the relatively slow clock speed (16MHz) the microcontroller runs at. And second, the LEDs have a significant (tens of milliseconds) time to turn on to full brightness once they are enabled. This has to do with the switching characteristics of the IRF510 power MOSFETs as well as the 5mm LEDs available to us through MyFab. Both of these limitations to speed can be addressed in future iterations (see section \ref{subsec:NextSteps}) but do not detract from the potential efficacy of the design, they only arise as a result of course-material limitations. Still, it seems like speed would likely be a major limitation any small scale implementation of this design. A human, while not very quick, can still be very competitive with our design, calling into question the validity of this kind of implementation of a colour and density sorting solution\footnote{This is not to say that colour and density sorting is not feasible, only that the scope our team operated under may not have left room for a valid solution.}.   
+
+            There are also several aspects of our requirements we weren't able to test completely. For example, one of our requirements states a worker must be able to use this with them outside of a recycling facility. While our team did calculations to determine that 8 AA alkaline batteries in series could supply our design with the requisite current and voltage, we were unable to assemble a battery pack to test this with; we only tested with a power supply and regulator for the microcontroller. Technical limitations like these can be broadly be addressed (see section \ref{subsec:NextSteps}) but tend to push the scope of the project and design.           
+            
+            In summary, we achieved the spirit of our value statement. With more time, we could feasibly implement a design that explicitly achieves every aspect of the statement with a broadened scope for materials and time. Our testing and design demonstrated an ability to sort plastic at the point of introduction, reducing the load on workers\footnote{Albeit in a limited capacity.}, allowing for increased throughput of plastics through the recycling system without eliminating jobs.  
+
 
         \subsection{On Our Team's Interaction}
+            Our team chose not to follow a strict division of labor for the development of any of our prototypes, everybody helped wherever they could whenever they themselves were not leading some aspect of the design. A key example of this is with the wiring in our first prototype, shown in figure \ref{fig:Overhead}. The wiring was incredibly tedious and needed to be perfect. It would have taken one person alone a few hours to do it properly and test it, however by splitting up the work and not assigning one person alone to it, we were able to finish the prototype faster than we otherwise would have. 
 
+            Of course, there were areas where one team member was more experienced than the others and was left to lead the corresponding part of the process. In these situations, the person would try to help the others understand what they were doing and why, however not at the cost of productivity. As is discussed in our Team values Statement (see Appendix \ref{subsubsec:TVS}), our team valued work well done over immediate understanding of a concept. This allowed our team to not get bogged down in explanations during the prototyping process while ensuring everyone understood what was going on by sharing an understanding after the fact.
     \section{Conclusion}
         \subsection{Reflection on Final Design}
+            In principal, we achieved the first part of the potential implementation of this product; we demonstrated that color and density can act as a basis for sorting some recyclable materials before human intervention. In doing so, we realized the value statement, while appropriate for the context, set the scope too deep for the time and resources we had available. While we were able to get through two partial design cycles - reframing and reassessing our requirements and scope - we were unable to produce a final product which could be used in the context we were addressing with our value statement. Still the insight we gained allows us to reflect upon our initial value statement and reinforce it. It seems that the concept of a compact, onsite, density and colour based sorter has the potential for in-context implementation, but requires further development before such an implementation can be achieved. This is supported by the functionality our final prototype affords, proving that it is possible to achieve some degree of sorting with the technology, despite the limitations discussed in section \ref{subsec:PerformanceLimitationsJustification}.
 
-        \subsection{Next Steps}
-
+        \subsection{Next Steps} \label{subsec:NextSteps}
+            Future iterations of this design need to address 2 major aspects of value statement.
+            
+            First, to increase throughput, the machine must work with a worker to outperform the worker doing the same task on their own. This would involve speeding up the sorting process and overcoming some of the limitations of the design, as discussed in section \ref{subsec:PerformanceLimitationsJustification}. To this end, our team suggests three major changes. First, switch to a 2-core STM based control system to operate at higher speed and take full advantage of multithreading to increase scanning performance. This would require the addition of an analog multiplexer to maintain the resolution achieved by our prototype without requiring the microcontroller to have as many internal ADCs, saving on cost. Second the power MOSFETs should be replaced with ones that have a lower gate charge and quicker I$_D$ response to V$_{GS}$, allowing the switching time for the LEDs to decrease and the duty cycle of a single scan to be decreased. Finally, a small, cheap camera should be used to replace the photoresistor array and eliminate the scanning motion required, instead relying on the microcontroller to process the image reported by the camera. Parts of the design would be kept (LEDs, scale platform), but the main gantry on the top would likely be removed in exchange for a camera\footnote{Testing contingent.}.
+            
+            Second, once it is confirmed that the concept can provide value to the context, a great deal of work needs to be done on the packaging side of the design to bring it within specifications of the requirements. Unfortunately, the time we had did not permit us to develop an enclosure suitable for the context. It wouldn't have made sense to design an enclosure without knowing if the design could work, however we did investigate sealing techniques and temperature ratings for all the components we ended up using; nothing in the existing design should degrade considerably at higher temperatures\footnote{According to available datasheets and specifications.} but some parts can certainly become damaged by excessive exposure to water or moisture, leading to corrosion. This would need to be addressed in a final iteration. 
 
     \newpage
 
@@ -140,7 +201,7 @@
 
     \section{Appendix}
         \subsection{Team}
-            \subsubsection{Team Values Statement}
+            \subsubsection{Team Values Statement} \label{subsubsec:TVS}
                 **half a page**
 
             \subsubsection{Benedek}

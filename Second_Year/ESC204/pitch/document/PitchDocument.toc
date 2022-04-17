@@ -1,30 +1,30 @@
-\contentsline {section}{\numberline {1}Introduction}{4}%
-\contentsline {subsection}{\numberline {1.1}Value Statement}{4}%
-\contentsline {subsection}{\numberline {1.2}Our Design}{4}%
-\contentsline {section}{\numberline {2}Background}{5}%
-\contentsline {subsection}{\numberline {2.1}Stakeholders}{5}%
-\contentsline {subsection}{\numberline {2.2}Scope}{5}%
-\contentsline {subsection}{\numberline {2.3}Environment}{6}%
-\contentsline {subsection}{\numberline {2.4}Prior Designs}{6}%
-\contentsline {subsection}{\numberline {2.5}Requirements}{6}%
-\contentsline {section}{\numberline {3}Design Process}{7}%
-\contentsline {subsection}{\numberline {3.1}Overarching \\ Design Decisions}{7}%
-\contentsline {subsection}{\numberline {3.2}Prototyping and \\ Application Design \\ Decisions}{7}%
-\contentsline {subsection}{\numberline {3.3}Project Management}{9}%
-\contentsline {subsection}{\numberline {3.4}Reflection on Global Virtual Interaction}{9}%
-\contentsline {section}{\numberline {4}Final Design}{9}%
-\contentsline {subsection}{\numberline {4.1}About the Design}{9}%
-\contentsline {subsection}{\numberline {4.2}Performance, \\Limitations, \\and Justification}{10}%
-\contentsline {subsection}{\numberline {4.3}On Our Team's Interaction}{11}%
-\contentsline {section}{\numberline {5}Conclusion}{11}%
-\contentsline {subsection}{\numberline {5.1}Reflection on Final Design}{11}%
-\contentsline {subsection}{\numberline {5.2}Next Steps}{12}%
-\contentsline {section}{\numberline {6}Appendix}{14}%
-\contentsline {subsection}{\numberline {6.1}Team}{14}%
-\contentsline {subsubsection}{\numberline {6.1.1}Team Values Statement}{14}%
-\contentsline {subsubsection}{\numberline {6.1.2}Benedek}{14}%
-\contentsline {subsubsection}{\numberline {6.1.3}Charles}{14}%
-\contentsline {subsubsection}{\numberline {6.1.4}Katarina}{14}%
-\contentsline {subsubsection}{\numberline {6.1.5}Robert}{14}%
-\contentsline {subsubsection}{\numberline {6.1.6}Ria}{14}%
-\contentsline {subsection}{\numberline {6.2}Bill of Materials}{14}%
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {subsection}{\numberline {1.1}Value Statement}{4}{}%
+\contentsline {subsection}{\numberline {1.2}Our Design}{4}{}%
+\contentsline {section}{\numberline {2}Background}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Stakeholders}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Scope}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Environment}{6}{}%
+\contentsline {subsection}{\numberline {2.4}Prior Designs}{6}{}%
+\contentsline {subsection}{\numberline {2.5}Requirements}{6}{}%
+\contentsline {section}{\numberline {3}Design Process}{7}{}%
+\contentsline {subsection}{\numberline {3.1}Overarching \\ Design Decisions}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Prototyping and \\ Application Design \\ Decisions}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Project Management}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Reflection on Global Virtual Interaction}{10}{}%
+\contentsline {section}{\numberline {4}Final Design}{10}{}%
+\contentsline {subsection}{\numberline {4.1}About the Design}{10}{}%
+\contentsline {subsection}{\numberline {4.2}Performance, \\Limitations, \\and Justification}{11}{}%
+\contentsline {subsection}{\numberline {4.3}On Our Team's Interaction}{12}{}%
+\contentsline {section}{\numberline {5}Conclusion}{13}{}%
+\contentsline {subsection}{\numberline {5.1}Reflection on Final Design}{13}{}%
+\contentsline {subsection}{\numberline {5.2}Next Steps}{13}{}%
+\contentsline {section}{\numberline {6}Appendix}{16}{}%
+\contentsline {subsection}{\numberline {6.1}Team}{16}{}%
+\contentsline {subsubsection}{\numberline {6.1.1}Team Values Statement}{16}{}%
+\contentsline {subsubsection}{\numberline {6.1.2}Benedek}{16}{}%
+\contentsline {subsubsection}{\numberline {6.1.3}Charles}{16}{}%
+\contentsline {subsubsection}{\numberline {6.1.4}Katarina}{16}{}%
+\contentsline {subsubsection}{\numberline {6.1.5}Robert}{16}{}%
+\contentsline {subsubsection}{\numberline {6.1.6}Ria}{17}{}%
+\contentsline {subsection}{\numberline {6.2}Bill of Materials}{17}{}%

@@ -23,6 +23,9 @@
         \date{\today}
     \maketitle
 
+    \includegraphics[width=\linewidth]{White.png}
+    \includegraphics[width=\linewidth]{CN.png}
+
     % \begin{figure}[H]
     %     \centering\includegraphics[width=0.7\linewidth]{StepperWiring.PNG}
     %     \captionsetup{width=0.9\linewidth}
@@ -31,12 +34,17 @@
 
     \newpage
 
-\begin{multicols*}{2}
     \section*{Executive Summary}
-        Executive summary
+        Many developing countries are hindered by a lack of waste management infrastructure, especially when it comes to sorting and recycling plastics. Recycling centers are few and far in between, leaving many people to dispose of their waste in landfills, mixing recyclable and non-recyclable materials together. In recent decades, several projects have sprung up to address this growing crisis \cite{wansi_2022} \cite{dow_2022}. Still, much of the plastic waste sorting is done by hand by individuals sorting through landfills for recyclable plastics \cite{GhanaSorting}.
+
+        Given the nature of the context, our team developed a value proposition to help us align our work with a greater, overarching goal that could help guide our design to something that could tangibly help our stakeholders. We set out to design, develop, and demonstrate an aid for the plastic waste crisis that does not require attention at the point of waste introduction, that reduces the burden on existing infrastructure, that increases recycling throughput, and that does so while maintaining or creating relevant jobs.
+
+        Through our research, we identified several ways of sorting plastics, however settled on a combination of density and colour as they seemed to provide relatively clear distinctions \cite{gent2009recycling} \cite{safavi2010sorting} \cite{bruno2000automated} with the most feasible implementation. Given the necessity to operate under constraints set by our FaCTs, our final prototype was scoped to demonstrate the concept of a density and colour based sorting system made with easily available mechanical and electronic materials\footnote{Namely, those available at MyFab.}. If such a system could work, we would successfully have shown that there is enough information in just the colour and density of a plastic to devise a practical sorting system that could separate recyclable materials, broadly, from non-recyclable ones. Being a system that requires some human supervision and assistance, this kind of design would address every aspect of our value proposition. 
+
+        Our final prototype consists of 2 main features: an optical, traversing scanner and a rotating, weighing plate. The scanner was initially intended to be a camera that would traverse over the subject material, however this was scoped out early in the design process, leaving our group to instead develop our own optical scanning assembly. Through a combination of red, green, and blue LEDs, our design shines different lights on the subject material and observes the reflected light using photoresistors. By traversing over the subject, we can generate an image profile under different lighting conditions and, in combination with the weight information form the scale, determine an approximate density of the plastic. Then, by comparing the result to reference data, the platform tilts in one of two direction, sorting the material into one pile or another.
 
     \newpage
-\end{multicols*}
+
     \tableofcontents
 
     \newpage
@@ -72,7 +80,13 @@
 
             Our design can be implemented at the point of collection to reduce the burden on plastic pickers by sorting batches of materials into piles that are more and less likely to be recyclable. This could increase the throughput of recyclable material by decreasing the time it takes to separate recyclable materials from non-recyclables while still requiring a worker to introduce material to the sorter and perform a final, more refined sorting of the desired pile.
 
-            ** FIGURE OF DESIGN **
+            
+            \begin{figure}[H]
+                \centering\includegraphics[width=\linewidth]{InitialConcept.png}
+                \captionsetup{width=\linewidth}
+                \caption{Initial sketch of our design idea. Design is exploded in x-direction for clarity. Initial design incorporated flattening machine which was scoped out early in design process.}
+                \label{fig:initial}
+            \end{figure}
 
     \section{Background}
         \subsection{Stakeholders}
@@ -95,9 +109,9 @@
         \subsection{Requirements}
             At a high level, our solution is expected to improve the throughput of plastics from landfills to recycling facilities. The design should accomplish this by analyzing a sample to gather information about density and color. Then, it should determine if it is likely to be recyclable by comparing the analysis to a reference dataset before dispensing it onto one of two piles. 
 
-            For the purposes of proving the concept that sorting plastics based upon density and color is sufficient to distinguish between recyclable and non-recyclable samples, the design must be able to successfully sort individual samples of both recyclable and non-recyclable materials, with no further constraints. This proof of concept would act as the basis for either further development into a final product or dismissal of the concept, making this requirement critical above all others.
+            For the purposes of proving the concept that sorting plastics based upon density and color is sufficient to distinguish between recyclable and non-recyclable samples, the design must be able to successfully sort individual samples of both recyclable and non-recyclable materials, with no further constraints. This proof of concept would act as the basis for either further development into a final product or dismissal of the concept, making this requirement critical above all others. Assessment of this requirement would be carried out by comparing the sorting the final product could achieve compared to what a perfectly sorted set would look like. That is, each piece of unsuccessfully sorted plastic would be a point against the concept. There is no use in setting an exact bar as to what would be acceptable as a human would be required by the value proposition for post-process handling and curating of the material, however by producing a piles which are sorted to a greater degree would be preferable.  
 
-            With the concept proved, the performance of the ultimate design should be tested by introducing a variety of materials (recyclable, non-recyclable, as well as a combination of the two) to ensure that a great proportion is sorted correctly to minimize subsequent screening time of the sorted pile. The design should also be tested against a human subject to determine if any improvement is achieved against human performance. Doing so would involve the human feeding material into the machine as quickly as it could handle it 
+            With the concept proved, the performance of the ultimate design should be tested by introducing a variety of materials (recyclable, non-recyclable, as well as a combination of the two) to ensure that a great proportion is sorted correctly to minimize subsequent screening time of the sorted pile. The design should also be tested against a human subject to determine if any improvement is achieved against human performance. Doing so would involve the human feeding material into the machine as quickly as it could handle it and assessing its performance there. In this respect, the design would be considered acceptable if it meets or outperforms the individual, as either of these would represent an improvement upon the current circumstances. This requirement would only need to be met by a final design, not necessarily the prototype produced to demonstrate the concept. 
 
             For the enclosure, to achieve the desired waterproofing, IPX4 \cite{gniazdo_2021} or greater should be met and demonstrated against the standard IPX testing procedures. To address heat in the environment, no materials should be used that warp or become damaged in temperatures approaching 50$^o$C \cite{GMET}. This could be verified using a space heater, a thermometer and a small enclosure to leave the design exposed to. 
 
@@ -134,12 +148,26 @@
                 \caption{Photoresistor and LED arrays on first scanning prototype.}
                 \label{fig:LEDs}
             \end{figure}
-            
+
+            \begin{figure}[H]
+                \centering\includegraphics[width=\linewidth]{ScannerV2.png}
+                \captionsetup{width=\linewidth}
+                \caption{Photoresistor and LED arrays on final prototype. More photoresistors were added and the yellow LEDs were removed. Density of each was also reduced after testing first prototype.}
+                \label{fig:LED0sV2}
+            \end{figure}
+
             \begin{figure}[H]
                 \centering\includegraphics[width=\linewidth]{BirdsEye.PNG}
                 \captionsetup{width=\linewidth}
-                \caption{Overhead view of first scanning prototype. Original rail system can be seen with stepper motor pulling gantry with wire.}
+                \caption{Overhead view of first scanning prototype. Original rail system had a stepper motor pulling gantry with wire.}
                 \label{fig:Overhead}
+            \end{figure}
+
+            \begin{figure}[H]
+                \centering\includegraphics[width=\linewidth]{CarriageV2.png}
+                \captionsetup{width=\linewidth}
+                \caption{Overhead view of final scanning prototype. Final rail system is driven by a threaded rod driving captive nuts in the carriage. Wooden dowels on either side keep assembly aligned.}
+                \label{fig:OverheadV2}
             \end{figure}
 
             The scale and rotator, being the simplest and most \textit{believable} part of our design was prototyped in a limited fashion. Testing of the load cell was done quite late in the design process, however it provided the desired resolution without much work. The rest of the platform was designed and manufactured late in the design process but also worked as intended without problem.
@@ -147,7 +175,9 @@
         \subsection{Project Management}
             
         \subsection{Reflection on Global Virtual Interaction}
-            Our team gleaned no insight or information from any interaction with or feedback from our GSU interaction. The interaction felt forced and motivated solely by curricular demand, proving to be a superfluous waste of time and resources.
+            Unfortunately, our team was unable to gather much useful input from our GSU partner through our interactions or their feedback. While the GSU student had some interesting insight on the context and their interpretation of the opportunity, we were unable to divine much in the way of useful or guiding information from the interaction, despite our good-faith attempt to have them elaborate on their feedback to elucidate their ideas. 
+
+            It seemed that our GSU collaborator was suggesting ways in which we could better understand what exactly it was about the process of material collecting and sorting that was so arduous as to warrant a helping design, however this was addressed in the context provider's statement. Our understanding lead us to believe that the groups that tend to take this kind of work are among society's most vulnerable, potentially leading to exploitation. Additionally, the work itself can be taxing as it involves sorting through potentially hazardous materials for many hours throughout the day. Despite explaining that our design would seek to address this by reducing the worker's direct exposure to the hazardous materials by partially sorting waste, our partner never elaborated on their point. 
             
     \section{Final Design}
 
@@ -156,9 +186,14 @@
 
             Our final design also addressed motion of the gantry, which was lackluster in our prototype. By using a threaded rod to drive a pair of captive nuts, we not only increased the rigidity of our system, but also increased the resolution in the axis of the rod by having much more precise control of the position of the gantry. This helped us achieve our requirement of accurate and consistent sorting materials by color and density through the improvement in resolution and repeatability.
 
-            ** BEN WRITE ABOUT THE PLATFORM **
+            Our initial design solution to sort waste and recyclables was a paddle that would swipe left or right across the platform to push the material to either side. For our final design, we made the entire platform tilt left or right, driven by a motor through a gear stage. This design is more robust and representative of how the solution might actually be implemented in context. For instance, the paddle needs to be positioned such that it faces away from the platform so that it can access the entire surface; in this way, the whole design must be twice as long as the platform itself. In contrast, if the platform simply tilts to drop material to the designated side, the design remains compact. This becomes especially useful when considering a larger sized implementation of the solution.
 
-            ** PICTURE OF ALL THE PARTS TOGETHERE HERE **
+            \begin{figure}[H]
+                \centering\includegraphics[width=\linewidth]{WholeDesignGrass.png}
+                \captionsetup{width=\linewidth}
+                \caption{Whole design assembled together. Pivoting scale platform can be seen underneath scanning deck. Sensors and LEDs are all wired in the main harness connected to the scanner (cluster of wires right of center.) Breadboard nearest to viewer holds opamps and signal transduction circuitry. Leftmost breadboard holds servo drivers and power regulators. Breadboard farthest from viewer holds LED control MOSFETs.}
+            \end{figure}
+
         
             
 
@@ -166,7 +201,12 @@
 
             Through the final testing our group conducted, we were able to achieve some of the performance we sought for; our first and final prototypes indicate that a solution with colour and density sorting is feasible within the context provided. Our final design is able to identify and sort materials like plastic bags, bottles, containers, and loose scraps from heavier, non plastic materials. It is able to successfully identify and record the shape of the scanning subject while weighing it and collecting color information. 
             
-            ** CHARLES CAN WE GET OR \textit{GENERATE} A PICTURE OF THE DISPLAY WE WOULD GET OUT OF THE ARDUINO **
+            \begin{figure}[H]
+                \centering\includegraphics[width=0.5\linewidth]{ScannedImage.png}
+                \captionsetup{width=\linewidth}
+                \caption{Image observed by scanner of opaque, empty plastic pouch. Made by exporting 2D array generated with scanner and visualized with OpenCV library.}
+                \label{fig:ScannedImage}
+            \end{figure}
 
             It is however less successful when it comes to distinguishing between recyclable and non-recyclable plastics. The resolution of the density is not fine enough to do so in some cases and in others the plastics are simply too similar to distinguish. Still, this falls within our requirements; the partially sorted pile the design produces requires some human attention, but is still more sorted than the originally introduced pile. 
 
@@ -181,6 +221,7 @@
             Our team chose not to follow a strict division of labor for the development of any of our prototypes, everybody helped wherever they could whenever they themselves were not leading some aspect of the design. A key example of this is with the wiring in our first prototype, shown in figure \ref{fig:Overhead}. The wiring was incredibly tedious and needed to be perfect. It would have taken one person alone a few hours to do it properly and test it, however by splitting up the work and not assigning one person alone to it, we were able to finish the prototype faster than we otherwise would have. 
 
             Of course, there were areas where one team member was more experienced than the others and was left to lead the corresponding part of the process. In these situations, the person would try to help the others understand what they were doing and why, however not at the cost of productivity. As is discussed in our Team values Statement (see Appendix \ref{subsubsec:TVS}), our team valued work well done over immediate understanding of a concept. This allowed our team to not get bogged down in explanations during the prototyping process while ensuring everyone understood what was going on by sharing an understanding after the fact.
+
     \section{Conclusion}
         \subsection{Reflection on Final Design}
             In principal, we achieved the first part of the potential implementation of this product; we demonstrated that color and density can act as a basis for sorting some recyclable materials before human intervention. In doing so, we realized the value statement, while appropriate for the context, set the scope too deep for the time and resources we had available. While we were able to get through two partial design cycles - reframing and reassessing our requirements and scope - we were unable to produce a final product which could be used in the context we were addressing with our value statement. Still the insight we gained allows us to reflect upon our initial value statement and reinforce it. It seems that the concept of a compact, onsite, density and colour based sorter has the potential for in-context implementation, but requires further development before such an implementation can be achieved. This is supported by the functionality our final prototype affords, proving that it is possible to achieve some degree of sorting with the technology, despite the limitations discussed in section \ref{subsec:PerformanceLimitationsJustification}.
@@ -188,7 +229,7 @@
         \subsection{Next Steps} \label{subsec:NextSteps}
             Future iterations of this design need to address 2 major aspects of value statement.
             
-            First, to increase throughput, the machine must work with a worker to outperform the worker doing the same task on their own. This would involve speeding up the sorting process and overcoming some of the limitations of the design, as discussed in section \ref{subsec:PerformanceLimitationsJustification}. To this end, our team suggests three major changes. First, switch to a 2-core STM based control system to operate at higher speed and take full advantage of multithreading to increase scanning performance. This would require the addition of an analog multiplexer to maintain the resolution achieved by our prototype without requiring the microcontroller to have as many internal ADCs, saving on cost. Second the power MOSFETs should be replaced with ones that have a lower gate charge and quicker I$_D$ response to V$_{GS}$, allowing the switching time for the LEDs to decrease and the duty cycle of a single scan to be decreased. Finally, a small, cheap camera should be used to replace the photoresistor array and eliminate the scanning motion required, instead relying on the microcontroller to process the image reported by the camera. Parts of the design would be kept (LEDs, scale platform), but the main gantry on the top would likely be removed in exchange for a camera\footnote{Testing contingent.}.
+            First, to increase throughput, the machine must work with a worker to outperform the worker doing the same task on their own. This would involve speeding up the sorting process and overcoming some of the limitations of the design, as discussed in section \ref{subsec:PerformanceLimitationsJustification}. To this end, our team suggests three major changes. First, switch to a 2-core STM based control system to operate at higher speed and take full advantage of multithreading to increase scanning performance. This would require the addition of an analog multiplexer to maintain the resolution achieved by our prototype without requiring the microcontroller to have as many internal ADCs, saving on cost. Second the power MOSFETs should be replaced with ones that have a lower gate charge and quicker I$_D$ response to V$_{GS}$, allowing the switching time for the LEDs to decrease and the duty cycle of a single scan to be decreased. Finally, a small, cheap camera should be used to replace the photoresistor array and eliminate the scanning motion required, instead relying on the microcontroller to process the image reported by the camera. Parts of the design would be kept (LEDs, scale platform), but the main gantry on the top would likely be removed in exchange for a camera\footnote{Testing contingent.}. Additionally, the addition of a second axis should be seriously considered to increase the significance of the density measurement. Doing so would allow us to form a quasi-3D image of the subject, making the density measurement more significant and aiding with sorting reliability.
             
             Second, once it is confirmed that the concept can provide value to the context, a great deal of work needs to be done on the packaging side of the design to bring it within specifications of the requirements. Unfortunately, the time we had did not permit us to develop an enclosure suitable for the context. It wouldn't have made sense to design an enclosure without knowing if the design could work, however we did investigate sealing techniques and temperature ratings for all the components we ended up using; nothing in the existing design should degrade considerably at higher temperatures\footnote{According to available datasheets and specifications.} but some parts can certainly become damaged by excessive exposure to water or moisture, leading to corrosion. This would need to be addressed in a final iteration. 
 
@@ -202,7 +243,9 @@
     \section{Appendix}
         \subsection{Team}
             \subsubsection{Team Values Statement} \label{subsubsec:TVS}
-                **half a page**
+            As a team, we prioritize safe, durable and sustainable solutions. Prior to the development of our conceptual design, we knew that we wanted to ensure all possible value of plastics could be obtained through a sustainable, effective, and safe preliminary waste sorting process. We did not want to be a team that would provide a solution, that, while innovative and pleasing to the eye, would not provide value outside of this course. 
+            Through our research on the community of Ghana and their waste management infrastructure, we realized that prioritizing a sustainable and durable solution would be able to prevent further harm to the community in ways that were not mentioned in their opportunity statement. We had discovered that most of the waste pickers make about GHS 2-5 per day and are elderly women, the most vulnerable members of any society. As such, we aimed for a safe and socially sustainable solution that was not 100\% automated to maintain jobs. 
+            The street pickers, while they receive a daily salary less than minimum wage, earn significantly less during the rainy season. The rainy season brings flooding which prevents collection and washes away usable material. As such, we were aiming for a durable solution to address the fact that the solution is going to be implemented in extremely wet, unsanitary, and difficult working conditions.
 
             \subsubsection{Benedek}
 
@@ -211,6 +254,14 @@
             \subsubsection{Katarina}
 
             \subsubsection{Robert}
+                The majority of my prior experience in design has been with electronics and some mechanical design. I took it upon myself to lead, wherever I could, in the electronics portions of our designs and work out the finer details of how the more complex components, like how the opamps and MOSFET control would work.
+
+                I value practicality and attainability in my design work; my contribution to the values statement was to assure that anything we set out to design was within our capabilities and attainable within the scope of the assignment. Additionally, I see value in thoroughly developing one part of a design and confirming its efficacy before moving on to another. This was borne out not only in our value statement but the scope of our final prototype; it is more valuable to rigorously test the concept of colour and density sorting than it is to design a product assuming that and have it fail in the end. 
+
+                For our project management, I organized and coordinated all aspects of the design with my teammates. I made sure that each separate part of the design could integrate with the others and produce a final prototype which performed as we wanted it to. This was important to my values as, again, having several pieces which worked independently but not together would produce a prototype that would ultimately fail. 
+
+                Therefore, my motivation, goals, and organization strategy helped with our team's success by keeping us grounded and allowing us to make deliberate and effective design decisions while scoping and executing our design.
+
 
             \subsubsection{Ria}
 

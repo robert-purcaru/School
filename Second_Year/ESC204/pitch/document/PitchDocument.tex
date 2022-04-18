@@ -12,19 +12,29 @@
 \usepackage{setspace}
 \usepackage{blindtext}
 \usepackage{multicol}
+\usepackage{blindtext}
 
 
 \linespread{1.15}
 \graphicspath{ {./images/} }
 
 \begin{document}
-    \title{Widget Lab 3}
-        \author{Robert Purcaru [1007019842]}
-        \date{\today}
+    \title{Seraphine: The Preliminary Plastic Sorting Machine}
+    \author{Benedek Szabo
+        \and Charles Yuan
+        \and Katarina Poffley
+        \and Robert Purcaru
+        \and Ria Upreti
+    }
+    \date{\today}
     \maketitle
 
     \includegraphics[width=\linewidth]{White.png}
     \includegraphics[width=\linewidth]{CN.png}
+
+    \begin{center}
+        Team 1910F
+    \end{center}
 
     % \begin{figure}[H]
     %     \centering\includegraphics[width=0.7\linewidth]{StepperWiring.PNG}
@@ -105,6 +115,9 @@
             Ultimately, our design would be expected to work alongside waste pickers to ease their burden of sorting. It should therefore be portable, rechargeable, and rugged enough to withstand regular use and abuse. Ghana also experiences dry and wet seasons; the solution should be able to function in heat exceeding 40$^o$C \cite{GMET}. Any enclosure designed for our product would be expected to do all this while presenting a safe and easy to maintain form factor so as to allow for on site, or otherwise, simple maintenance. 
 
         \subsection{Prior Designs}
+            Through our research, we identified two reference designs that we though could provide us insight into how we could design our final prototype. First, the Nexeed Optical Sorter which features full-colour cameras to sort based on imagery of a subject. This product finds use in industrial seed and grain sorting/processing, which indicated to us that such a technology could be scaled (with some work) to meet our needs. We also noted that their system uses a small array of cameras operating on a single axis to collect information about the subject.
+
+            Second, to measure density, our research identified magnetic float densimeters being used to find fluid densities to a very precise degree. By displacing the fluid in question with a less dense float, using magnets to force the float to a neutrally buoyant position, and recording that force, the density of the fluid can be determined by the buoyant force on the float. While the technology used in this reference couldn't reasonably be ported over to anything we might build for this design, it did inspire us to consider a different way of measuring density that would ultimately lead to the method used in our final prototype.
 
         \subsection{Requirements}
             At a high level, our solution is expected to improve the throughput of plastics from landfills to recycling facilities. The design should accomplish this by analyzing a sample to gather information about density and color. Then, it should determine if it is likely to be recyclable by comparing the analysis to a reference dataset before dispensing it onto one of two piles. 
@@ -286,11 +299,26 @@
 
 
             \subsubsection{Ria}
+                My primary areas of expertise are electronics assembly, research, and writing. In the beginning of our design process, I focused my research on current and future developments in recycling technology so that our design could be inspired by innovative features present in reference designs. I value effective communication in engineering design, specifically in communicating design ideas to stakeholders, so as to avoid issues such as the curse of knowledge mentioned in class. As such, I focused my contributions to the later stages of the design process on effectively describing our design in ways that would make sense to those without a technical background, particularly in key public-facing deliverables such as the brochure and presentation slides.
 
-            
+
+        \newpage
+
+    \end{multicols*}
+
         \subsection{Bill of Materials}
 
+        \includegraphics[width=\linewidth]{BOMpg1.png}
 
-\end{multicols*}
+        \newpage
 
+        \includegraphics[width=\linewidth]{BOMpg2.png}
+
+        \newpage
+
+        \includegraphics[width=\linewidth]{BOMpg3.png}
+
+        \newpage
+
+        \includegraphics[width=\linewidth]{BOMpg4.png}
 \end{document}
